@@ -14,6 +14,12 @@ function camel {
 }
 
 
+# Starts a Python3 webserver in the current folder. Browser to localhost:8000
+function serve {
+  python3 -m http.server
+}
+
+
 # Opens .bashrc in Nano.
 function bashrc {
   nano ~/.bashrc
