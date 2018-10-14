@@ -16,6 +16,7 @@ function camel {
 
 # Starts a Python3 webserver in the current folder. Browser to localhost:8000
 function serve {
+  printf "Serving $PWD at http://localhost:8000\n~~~~~~~~~~~~~~\n"
   python3 -m http.server
 }
 
