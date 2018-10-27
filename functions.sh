@@ -31,3 +31,12 @@ function bashrc {
 function refresh {
   exec bash
 }
+
+
+# Uses Pandoc to convert a Markdown file to PDF and tex.
+# Requirements: pandoc, texlive.
+# Example: 'convertMd assignment' (where 'assignment.md' is present in current directory)#   output: assignment.pdf, assignment.tex
+# The tex file is useful for making minor formatting fixes.
+function convertMd {
+  pandoc $1.md -s -o $1.pdf && pandoc $1.md -s -o $1.tex
+}
