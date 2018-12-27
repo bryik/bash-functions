@@ -1,4 +1,4 @@
-# wsl-bash
+# bash-functions
 
 A collection of Bash customizations.
 
