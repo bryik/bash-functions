@@ -40,3 +40,16 @@ function refresh {
 function convertMd {
   pandoc $1.md -s -o $1.pdf && pandoc $1.md -s -o $1.tex
 }
+
+# Creates a Python virtual env called "venv" in the current directory
+function pyinit {
+  python -m venv venv
+}
+# Activates venv
+function pyactivate {
+  source ./venv/bin/activate
+}
+# Deactivates venv
+function pydeactivate {
+  deactivate
+}
