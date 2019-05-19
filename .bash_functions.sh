@@ -43,7 +43,7 @@ function convertMd {
 
 # Creates a Python virtual env called "venv" in the current directory
 function pyinit {
-  python -m venv venv
+  python3 -m venv venv
 }
 # Activates venv
 function pyactivate {
